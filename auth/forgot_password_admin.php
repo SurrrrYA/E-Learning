@@ -7,6 +7,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';
 
+// Load kredensial dari file .env di root project
+$env = parse_ini_file(__DIR__ . '/../.env');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = strtolower(trim($_POST['email']));
 
@@ -38,12 +41,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'djmarsmellow414@gmail.com'; // Email kamu
-            $mail->Password   = 'azpzqdfdvuuyphbp';          // App Password
+            $mail->Username   = $env['SMTP_EMAIL'];    // Mengambil dari .env
+            $mail->Password   = $env['SMTP_PASSWORD']; // Mengambil dari .env
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('djmarsmellow414@gmail.com', 'E-Learning');
+            $mail->setFrom($env['SMTP_EMAIL'], 'E-Learning');
             $mail->addAddress($admin['email'], $admin['nama']);
 
             $mail->isHTML(true);
