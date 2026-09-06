@@ -11,7 +11,7 @@ Aplikasi ini mendukung 3 peran pengguna (*roles*):
 
 1. **Admin**
    - Pengelolaan data pengguna (Siswa, Guru, Admin).
-   - Pengelolaan kelas, mata pelajaran, dan konfigurasi sistem.
+   - Pengelolaan kelas dan konfigurasi sistem.
    - Fitur reset password admin berbasis email SMTP.
 
 2. **Guru**
