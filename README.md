@@ -37,7 +37,7 @@ Aplikasi ini mendukung 3 peran pengguna (*roles*):
 
 ---
 
-## Tampilan
+## Tampilan Halaman
 <img width="1867" height="897" alt="Screenshot 2026-09-05 174734" src="https://github.com/user-attachments/assets/5180c02e-59d6-45fe-9552-d2ee6ea3a15f" />
 <img width="1397" height="830" alt="Screenshot 2026-09-05 174252" src="https://github.com/user-attachments/assets/15432e90-1740-450a-8b21-fd83239186f5" />
 <img width="1140" height="906" alt="Screenshot 2026-09-05 172914" src="https://github.com/user-attachments/assets/ec869f24-1d08-49da-b999-e8857e8cfae5" />
